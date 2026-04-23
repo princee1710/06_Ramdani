@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Modular UI Light Theme</title>
+<title>Modern Modular UI</title>
 
 <style>
   * {
@@ -13,46 +13,53 @@
   }
 
   body {
-    background: #f1f5f9;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
     color: #1e293b;
-    padding: 20px;
+    padding: 30px;
   }
 
   h1 {
     margin-bottom: 20px;
+    font-weight: 700;
   }
 
-  /* NAV */
+  /* NAVBAR */
   nav {
-    background: white;
-    padding: 12px 20px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    padding: 14px 20px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
   }
 
   nav a {
     margin-right: 20px;
+    padding: 6px 12px;
+    border-radius: 8px;
     color: #64748b;
     cursor: pointer;
-    text-decoration: none;
+    transition: 0.3s;
   }
 
   nav a.active {
-    color: #0ea5e9;
-    font-weight: bold;
+    background: linear-gradient(135deg, #6366f1, #3b82f6);
+    color: white;
+    font-weight: 600;
   }
 
   nav a:hover {
-    color: #0ea5e9;
+    background: rgba(99,102,241,0.1);
+    color: #4f46e5;
   }
 
   /* SECTION */
   section {
-    background: white;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(8px);
     padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   }
 
   /* FORM */
@@ -61,23 +68,32 @@
   }
 
   input {
-    padding: 8px;
+    padding: 10px;
     margin-right: 10px;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid #cbd5e1;
+    transition: 0.2s;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.2);
   }
 
   button {
-    padding: 8px 14px;
-    background: #0ea5e9;
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #6366f1, #3b82f6);
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     color: white;
     cursor: pointer;
+    transition: 0.2s;
   }
 
   button:hover {
-    background: #0284c7;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(99,102,241,0.3);
   }
 
   /* TABLE */
@@ -89,15 +105,19 @@
 
   th, td {
     padding: 12px;
-    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
   }
 
   th {
-    background: #f8fafc;
+    background: rgba(99,102,241,0.1);
+  }
+
+  tr {
+    transition: 0.2s;
   }
 
   tr:hover {
-    background: #f1f5f9;
+    background: rgba(99,102,241,0.05);
   }
 
   /* CARD */
@@ -109,19 +129,21 @@
 
   .card {
     background: white;
-    padding: 15px;
-    border-radius: 12px;
+    padding: 16px;
+    border-radius: 14px;
     width: 180px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    transition: 0.2s;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    transition: 0.25s;
   }
 
   .card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
   }
 
   .card h3 {
-    color: #0ea5e9;
+    color: #4f46e5;
+    margin-bottom: 5px;
   }
 
   /* LIST */
@@ -131,25 +153,31 @@
 
   li {
     padding: 10px;
-    background: #f8fafc;
-    margin-bottom: 6px;
-    border-radius: 8px;
+    background: rgba(99,102,241,0.05);
+    margin-bottom: 8px;
+    border-radius: 10px;
+    transition: 0.2s;
+  }
+
+  li:hover {
+    background: rgba(99,102,241,0.1);
   }
 
   /* ARRAY */
   pre {
-    background: #f8fafc;
+    background: #1e293b;
+    color: #38bdf8;
     padding: 12px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-top: 10px;
-    color: #0ea5e9;
+    overflow-x: auto;
   }
 </style>
 </head>
 
 <body>
 
-<h1>📘 Modular UI (Light Theme)</h1>
+<h1>✨ Modern Modular UI</h1>
 
 <nav id="menu"></nav>
 <section id="content"></section>
